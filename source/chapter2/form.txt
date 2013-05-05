@@ -1,0 +1,130 @@
+■ Form HTML
+
+<table>
+<tr>
+<th>회사이름<span class="require">※필수</span></th>
+<td></td>
+</tr>
+<tr>
+<th>이름<span class="require">※필수</span></th>
+<td></td>
+</tr>
+<tr>
+<th>메일주소<span class="require">※필수</span></th>
+<td></td>
+</tr>
+<tr>
+<th>전화번호</th>
+<td></td>
+</tr>
+<tr>
+<th>상담 내용<span class="require">※필수</span></th>
+<td></td>
+</tr>
+</table>
+
+
+
+■ Form HTML ('Contact Form 7' 코드 포함)
+
+<table>
+<tr>
+<th>회사명<span class="require">※필수</span></th>
+<td>[text* company 60/ class:length-l class:text]</td>
+</tr>
+<tr>
+<th>이름<span class="require">※필수</span></th>
+<td>[text* your_name 40/ class:length-m class:text]</td>
+</tr>
+<tr>
+<th>메일주소<span class="require">※필수</span></th>
+<td>[email* email 60/ class:length-l class:text]</td>
+</tr>
+<tr>
+<th>전화번호</th>
+<td>[text tel 40/ class:length-m class:text]</td>
+</tr>
+<tr>
+<th>상담 내용<span class="require">※필수</span></th>
+<td>[textarea* content 60x7 class:length-l class:text]</td>
+</tr>
+</table>
+[submit class:submit "위 내용으로 전송"]
+
+
+
+■ 웹 관리자에게 전송되는 통지 메일
+
+● 연락처
+
+To:
+****@******* (※통지하고 싶은 메일주소)
+
+From:
+보내는 사람
+[your_name] <[email]>
+
+
+제목:
+문의가 있었습니다.
+
+
+
+● 메시지 내용
+
+고객센터 담당자에게
+
+[your_name]님으로부터 문의가 있었습니다.
+신속하고 적절한 답변을 부탁드립니다.
+
+▼문의 내용▼▼▼▼▼▼▼▼▼▼▼▼▼
+
+회사명　　　　　　：[company]
+이  름　　　　　　：[your_name]
+메일주소      　　：[email]
+전화번호  　　　　：[tel]
+문의 내용       　：[content]
+
+▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+
+Pacific Mall 개발주식회사.
+
+
+
+■ 문의한 고객에게 전송할 확인 메일
+
+● 연락처
+
+To:
+[email]
+
+
+From:
+Pacific Mall 개발주식회사 <pacific@example.com>
+
+
+제목:
+문의해 주셔서 감사합니다.
+
+
+
+● 메시지 내용
+
+[company]　[your_name]님!
+
+Pacific Mall 개발주식회사에 문의를 해주셔서 대단히 감사합니다.
+
+문의하신 내용에 대해서는 제1영업일 이내에 담당자가 연락을 드리겠습니다.
+
+대단히 죄송하지만 잠시 기다려주시기 바랍니다.
+
+
+Pacific Mall 개발주식회사는 여러분에게 도움이 되는
+상업시설의 개발 및 운영을 목표로 최선의 노력을 하고 있습니다.
+앞으로도 많은 성원 부탁드립니다.
+
+-----------------------------------------------------------------------------
+   Pacific Mall 개발주식회사
+　【상담전용전화】 03-0000-0000　
+※ 접수시간 9:00 ~ 18:00 (월 ~ 금)
+-----------------------------------------------------------------------------
